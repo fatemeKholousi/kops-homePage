@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+
+        .headerbox {
+
+            padding: 20px;
+            background-color: rgb(103, 174, 241);
+
+        }
+
+        .subscribe {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: auto;
+            background-color: rgb(103, 174, 241);
+        }
+
+        .subscribe h3 {
+            color: white;
+            margin-right: auto;
+            margin-left: 5vw;
+        }
+
+        .headerbox h1,
+        .headerbox .sub-txt-in-header {
+            display: inline-block;
+            color: white;
+            padding-left: 70px;
+            padding-right: 60px;
+        }
+
+        .sub-txt-in-header {
+            float: right;
+            padding-top: 20px;
+            font-size: 20px;
+        }
+
+        .before-cards {
+            text-align: center;
+            margin: auto;
+            width: 40rem;
+        }
+
+        .before-cards h2 {
+            color: rgb(103, 174, 241);
+
+        }
+
+        .cards {
+            margin: auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            direction: row;
+            flex-wrap: wrap;
+
+        }
+
+        .cards .box {
+            margin: 2vw;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        .cards .box img {
+            width: 23em;
+            height: 40vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 2px 16px;
+        }
+
+        #visit-btn {
+            margin-left: 50%;
+            width: 10vw;
+            height: 7vh;
+            float: none;
+            margin-bottom: 10vh;
+        }
+
+        button {
+            color: blanchedalmond;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgb(87, 209, 87);
+            border: none;
+        }
+
+        input {
+            padding: 10px;
+            margin-right: 0.5vw;
+            border: none;
+
+        }
+
+        #subscribe-btn {
+            padding: 10px;
+            width: 10vw;
+            margin-right: 5vw;
+        }
+
+        #email-input {
+            width: 30vw;
+        }
+
+        ul,
+        ol {
+            display: inline-block;
+        }
+
+        ol {
+            line-height: 2vw;
+
+        }
+
+        ul {
+            list-style-type: none;
+            line-height: 2vw;
+
+
+        }
+
+        #linklist2,
+        #linklist1,
+        #linklist3 {
+            margin-left: -1.5vw;
+            font-weight: bolder;
+        }
+
+        .bottom-side {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .logo-and-other {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #last-logo {
+            width: 200px;
+            height: 200px;
+        }
+
+        #sub-logo-text-anime {
+            width: 230px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            background-color: rgb(60, 153, 240);
+            padding: 5px;
+        }
+
+        #login {
+            margin-left: 2vw;
+        }
+
+        #login a:link,
+        #login a:visited {
+            color: rgb(56, 240, 179);
+
+        }
+
+        #triangle-i {
+            width: 20px;
+            height: 20px;
+            padding-top: 15px;
+            /* float: right; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="" height="70px" width="100px">
+        <nav class="nav__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Travel</a></li>
+
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="www.google.com">How To Trip</a></li>
+
+        </nav>
+        <div id="select">
+            <select name="" id="selection-search">
+                <option value="">selection-search</option>
+                <option value="">#trends</option>
+                <option value="">#hits</option>
+                <option value="">#latest</option>
+                <option value="">#oldest</option>
+            </select>
+        </div>
+        <a href="#" id="login"> login</a>
+    </header>
+    <div class="headerbox">
+        <h1>Destination</h1>
+        <span class="sub-txt-in-header">
+            <img src="images/home-icon.jpg" alt="" width="30px" height="25px"> Home / Destination</span>
+    </div>
+    <div class="before-cards">
+        <h2>Destinations</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere, magni?</p>
+    </div>
+    <div class="cards">
+
+
+
+
+        <div class="box">
+            <img src="images/o1.jpg" alt="Avatar">
+            <div class="container">
+                <p>Architect & Engineer</p>
+                <img src="images\triangle.png" alt="" id="triangle-i">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/o2.jpg" alt="Avatar">
+            <div class="container">
+                <p>Architect & Engineer</p>
+                <img src="images\triangle.png" alt="" id="triangle-i">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/o3.jpg" alt="Avatar">
+            <div class="container">
+                <p>Architect & Engineer</p>
+                <img src="images\triangle.png" alt="" id="triangle-i">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/o4.jpg" alt="Avatar">
+            <div class="container">
+                <p>Architect & Engineer</p>
+                <img src="images\triangle.png" alt="" id="triangle-i">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/o1.jpg" alt="Avatar">
+            <div class="container">
+                <p>Architect & Engineer</p>
+                <img src="images\triangle.png" alt="" id="triangle-i">
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/o6.jpg" alt="Avatar">
+            <div class="container">
+                <p>Architect & Engineer</p>
+                <img src="images\triangle.png" alt="" id="triangle-i">
+            </div>
+        </div>
+
+    </div>
+    <button id="visit-btn">Visit More...</button>
+    <div class="subscribe">
+        <h3>Subscribe to our free newsLetter</h3>
+        <input type="text" id="name-input" placeholder="Name">
+        <input type="text" id="email-input" placeholder="Email">
+        <button id="subscribe-btn">Subscribe</button>
+
+    </div>
+    <div class="bottom-side">
+        <div class="logo-and-other">
+            <img src="images\logo-anime.jpg" alt="" id="last-logo">
+            <p id="sub-logo-text-anime">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus maxime
+                exercitationem perspiciatis fuga
+                doloribus blanditiis?</p>
+            <div class="social-media-icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+        </div>
+        <div class="list-links">
+            <ol>
+                <p id="linklist1">Booked Now What</p>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, rerum.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing.</li>
+                <li>Lorem ipsum dolor sit amet consectetur.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ol>
+            <ul>
+                <p id="linklist2"> Community</p>
+                <li>Tea</li>
+                <li>Tea</li>
+                <li>Milk</li>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+                <li>Coffee</li>
+            </ul>
+            <ul>
+                <p id="linklist3"> UseFul Links</p>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+                <li>Coffee</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, similique!
+    </footer>
+</body>
+
+</html>
